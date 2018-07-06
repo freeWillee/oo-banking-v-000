@@ -30,7 +30,6 @@ class Transfer
       self.recipient.balance -= self.amount
       self.status = "reversed"
     else
-      self.status = "rejected"
       return "Transaction cannot be reversed."
     end
   end
