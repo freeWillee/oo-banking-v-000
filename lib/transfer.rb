@@ -10,7 +10,8 @@ class Transfer
   end
 
   def valid?
-    
+    self.sender.valid? && self.sender.balance > self.amount &&
+    self.recipient.valid?
   end
 
 end
